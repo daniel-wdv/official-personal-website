@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,76 +18,78 @@
 
 
 </head>
+
 <body class="text-center">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link" href="../index.html">Home /</a>
-                <a class="nav-link" href="about-me.html">About Me /</a>
-                <a class="nav-link active" href="skills.html">Skills</a>
-                <a class="nav-link" href="experience.html">/ Experience /</a>
-                <a class="nav-link" href="contact-me.html">Contact Me</a>
-            </nav>
-        </div>
-    </header>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" href="../index.html">Home /</a>
+                    <a class="nav-link" href="about-me.html">About Me /</a>
+                    <a class="nav-link active" href="skills.html">Skills</a>
+                    <a class="nav-link" href="experience.html">/ Experience /</a>
+                    <a class="nav-link" href="contact-me.html">Contact Me</a>
+                </nav>
+            </div>
+        </header>
 
-    <!-- SKILLS -->
-        <div class="bar-1">
-            <div class="title">HTML5+CSS3 (Bootstrap + Tailwind)</div>
-            <div class="bar" data-width="90%">
-                <div class="bar-inner">
+        <!-- SKILLS -->
+        <div class="responsive-skill-bar">
+            <div class="bar-1">
+                <div class="title">HTML5+CSS3 (Bootstrap + Tailwind)</div>
+                <div class="bar" data-width="90%">
+                    <div class="bar-inner">
+                    </div>
+                    <div class="bar-percent">90%</div>
                 </div>
-                <div class="bar-percent">90%</div>
             </div>
-        </div>
-        <div class="bar-1">
-            <div class="title" style="color: #292929;">Javascript (Jquery)</div>
-            <div class="bar" data-width="70%">
-                <div class="bar-inner" style="background: #292929;">
+            <div class="bar-1">
+                <div class="title" style="color: #292929;">Javascript (Jquery)</div>
+                <div class="bar" data-width="70%">
+                    <div class="bar-inner" style="background: #292929;">
+                    </div>
+                    <div class="bar-percent">70%</div>
                 </div>
-                <div class="bar-percent">70%</div>
             </div>
-        </div>
-        <div class="bar-1">
-            <div class="title" style="color: #292929;">Php</div>
-            <div class="bar" data-width="90%">
-                <div class="bar-inner" style="background: #292929;">
+            <div class="bar-1">
+                <div class="title" style="color: #292929;">Php</div>
+                <div class="bar" data-width="90%">
+                    <div class="bar-inner" style="background: #292929;">
+                    </div>
+                    <div class="bar-percent">90%</div>
                 </div>
-                <div class="bar-percent">90%</div>
             </div>
-        </div>
-        <div class="bar-1">
-            <div class="title" style="color: #292929">MySQL</div>
-            <div class="bar" data-width="70%">
-                <div class="bar-inner" style="background: #292929;">
+            <div class="bar-1">
+                <div class="title" style="color: #292929">MySQL</div>
+                <div class="bar" data-width="70%">
+                    <div class="bar-inner" style="background: #292929;">
+                    </div>
+                    <div class="bar-percent">70%</div>
                 </div>
-                <div class="bar-percent">70%</div>
+            </div>
+            <div class="bar-1">
+                <div class="title" style="color: #292929">GIT + Docker</div>
+                <div class="bar" data-width="80%">
+                    <div class="bar-inner" style="background: #292929;">
+                    </div>
+                    <div class="bar-percent">80%</div>
+                </div>
             </div>
         </div>
-         <div class="bar-1">
-        <div class="title" style="color: #292929">GIT + Docker</div>
-        <div class="bar" data-width="80%">
-            <div class="bar-inner" style="background: #292929;">
-            </div>
-            <div class="bar-percent">80%</div>
-        </div>
-         </div>
 
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-        </div>
-    </footer>
-</div>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
 
 <script>
-    $(".bar").each(function(){
+    $(".bar").each(function() {
         $(this).find(".bar-inner").animate({
             width: $(this).attr("data-width")
-        },2500)
+        }, 2000)
     });
 </script>
-
-
