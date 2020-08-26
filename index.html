@@ -31,8 +31,15 @@
 
         <main role="main" class="inner cover">
             <img class="img-front img-fluid img-margin" src="images/0.jpg">
-            <h2 class="responsive-title"><b>Daniel Carvalho</b></h2>
-            <p class="lead responsive-lead">FullStack Web Developer</p>
+          <!--  <h2 class="responsive-title"><b>Daniel Carvalho</b></h2>
+            <p class="lead responsive-lead">FullStack Web Developer</p>-->
+
+            <div class="wrapper">
+                <h2 class="responsive-title">Daniel Carvalho</h2>
+                <div data-text></div>
+                <span class="item lead responsive-lead">FullStack Web Developer</span>
+            </div>
+
             <!-- Social LOGOS -->
             <div class="container" style="padding-right: 0;">
                 <a href="mailto:danielcarvalho.wd@gmail.com?subject=Came%20from%20Github"><img src="https://i.imgur.com/Ebm2449.png" data-canonical-src="https://i.imgur.com/Ebm2449.png" class="responsive-icons" width="30" height="30" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -49,6 +56,50 @@
             </div>
         </footer>
     </div>
+
+<script>
+    let wrapper
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
+
+    async function writingAll (stringTarget, container){
+        wrapper = document.querySelector('['+container+']')
+        const stringsContainer = document.getElementsByClassName(stringTarget)
+
+        while(wrapper){
+            for (i=0; i <  stringsContainer.length ; i++){
+                const string = stringsContainer[i].textContent
+                await write(string)
+                await sleep(1000)
+                await erase()
+                await sleep(1000)
+            };
+        }
+    };
+
+    async function write(text){
+        let index = 0
+        while(index < text.length){
+            const timeout = 100
+            await sleep(timeout)
+            index++
+            wrapper.innerHTML = text.substring(0, index)
+        }
+    };
+
+
+    async function erase() {
+        while(wrapper.textContent.length){
+            const timeout = 100
+            await sleep(timeout)
+            wrapper.textContent = wrapper.textContent.substring(0, wrapper.textContent.length - 2)
+        }
+    };
+
+    writingAll('item', 'data-text');
+
+
+
+</script>
 </body>
 
 </html>
