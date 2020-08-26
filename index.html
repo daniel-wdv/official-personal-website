@@ -85,20 +85,7 @@
             wrapper.innerHTML = text.substring(0, index)
         }
     };
-
-
-    async function erase() {
-        while(wrapper.textContent.length){
-            const timeout = 100
-            await sleep(timeout)
-            wrapper.textContent = wrapper.textContent.substring(0, wrapper.textContent.length - 2)
-        }
-    };
-
     writingAll('item', 'data-text');
-
-
-
 </script>
 </body>
 
