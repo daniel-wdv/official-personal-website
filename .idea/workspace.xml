@@ -25,6 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -35,7 +36,8 @@
       <option name="presentableId" value="Default" />
       <updated>1598262568754</updated>
       <workItem from="1598262569852" duration="26960000" />
-      <workItem from="1598434633119" duration="3777000" />
+      <workItem from="1598434633119" duration="5272000" />
+      <workItem from="1598959932296" duration="23000" />
     </task>
     <servers />
   </component>
